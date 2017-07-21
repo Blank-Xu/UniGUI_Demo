@@ -47,7 +47,7 @@ object MainForm: TMainForm
       object UniButton1: TUniButton
         Left = 8
         Top = 16
-        Width = 120
+        Width = 89
         Height = 25
         Hint = ''
         Caption = 'Get All Cookies!'
@@ -65,7 +65,7 @@ object MainForm: TMainForm
       Caption = ''
       TabOrder = 1
       object UniLabel3: TUniLabel
-        Left = 8
+        Left = 3
         Top = 40
         Width = 62
         Height = 13
@@ -75,9 +75,9 @@ object MainForm: TMainForm
         TabOrder = 3
       end
       object UniButton3: TUniButton
-        Left = 8
+        Left = 3
         Top = 9
-        Width = 120
+        Width = 94
         Height = 25
         Hint = ''
         Caption = 'Get This  Cookie'
@@ -86,14 +86,45 @@ object MainForm: TMainForm
         OnClick = UniButton3Click
       end
       object UniEdit3: TUniEdit
-        Left = 8
+        Left = 3
         Top = 59
-        Width = 121
+        Width = 89
         Height = 21
         Hint = ''
         Text = ''
         ParentFont = False
         TabOrder = 1
+      end
+      object UniButton4: TUniButton
+        Left = 120
+        Top = 9
+        Width = 120
+        Height = 25
+        Hint = ''
+        Caption = 'Ext: Get This  Cookie'
+        ParentFont = False
+        TabOrder = 4
+        OnClick = UniButton4Click
+      end
+      object UniEdit4: TUniEdit
+        Left = 120
+        Top = 59
+        Width = 120
+        Height = 21
+        Hint = ''
+        Text = ''
+        ParentFont = False
+        TabOrder = 5
+      end
+      object UniLabel5: TUniLabel
+        Left = 120
+        Top = 40
+        Width = 61
+        Height = 13
+        Hint = ''
+        Caption = 'Cookie Value'
+        ParentFont = False
+        TabOrder = 6
       end
     end
     object UniPanel4: TUniPanel
@@ -106,7 +137,7 @@ object MainForm: TMainForm
       Anchors = [akLeft, akTop, akBottom]
       TabOrder = 2
       object UniLabel1: TUniLabel
-        Left = 8
+        Left = 3
         Top = 47
         Width = 62
         Height = 13
@@ -116,7 +147,7 @@ object MainForm: TMainForm
         TabOrder = 5
       end
       object UniLabel2: TUniLabel
-        Left = 8
+        Left = 3
         Top = 93
         Width = 61
         Height = 13
@@ -126,7 +157,7 @@ object MainForm: TMainForm
         TabOrder = 6
       end
       object UniLabel4: TUniLabel
-        Left = 8
+        Left = 3
         Top = 139
         Width = 48
         Height = 13
@@ -136,9 +167,9 @@ object MainForm: TMainForm
         TabOrder = 7
       end
       object UniEdit1: TUniEdit
-        Left = 8
+        Left = 3
         Top = 66
-        Width = 121
+        Width = 89
         Height = 21
         Hint = ''
         Text = ''
@@ -146,7 +177,7 @@ object MainForm: TMainForm
         TabOrder = 0
       end
       object UniEdit2: TUniEdit
-        Left = 8
+        Left = 3
         Top = 112
         Width = 232
         Height = 21
@@ -156,9 +187,9 @@ object MainForm: TMainForm
         TabOrder = 1
       end
       object UniButton2: TUniButton
-        Left = 8
+        Left = 3
         Top = 16
-        Width = 120
+        Width = 89
         Height = 25
         Hint = ''
         Caption = 'Set Cookie'
@@ -167,7 +198,7 @@ object MainForm: TMainForm
         OnClick = UniButton2Click
       end
       object UniDateTimePicker1: TUniDateTimePicker
-        Left = 8
+        Left = 3
         Top = 158
         Width = 232
         Height = 21
@@ -179,6 +210,17 @@ object MainForm: TMainForm
         FirstDayOfWeek = dowLocaleDefault
         TabOrder = 3
         Color = clWhite
+      end
+      object UniButton5: TUniButton
+        Left = 120
+        Top = 16
+        Width = 120
+        Height = 25
+        Hint = ''
+        Caption = 'Ext: Set Cookie'
+        ParentFont = False
+        TabOrder = 8
+        OnClick = UniButton5Click
       end
     end
   end

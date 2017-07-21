@@ -26,10 +26,16 @@ type
     UniLabel2: TUniLabel;
     UniDateTimePicker1: TUniDateTimePicker;
     UniLabel4: TUniLabel;
+    UniButton4: TUniButton;
+    UniButton5: TUniButton;
+    UniEdit4: TUniEdit;
+    UniLabel5: TUniLabel;
     procedure UniButton1Click(Sender: TObject);
     procedure UniButton3Click(Sender: TObject);
     procedure UniButton2Click(Sender: TObject);
     procedure UniFormCreate(Sender: TObject);
+    procedure UniButton4Click(Sender: TObject);
+    procedure UniButton5Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -69,6 +75,16 @@ end;
 procedure TMainForm.UniButton3Click(Sender: TObject);
 begin
   UniMemo1.Lines.Add('>'+DecodeString(UniApplication.Cookies.Values[UniEdit3.Text]));
+end;
+
+procedure TMainForm.UniButton4Click(Sender: TObject);
+begin
+  UniSession.AddJS('MainForm.UniEdit4.setValue(Ext.util.Cookies.get(MainForm.UniEdit3.getValue()));');
+end;
+
+procedure TMainForm.UniButton5Click(Sender: TObject);
+begin
+  UniSession.AddJS('Ext.util.Cookies.set(MainForm.UniEdit1.getValue(),MainForm.UniEdit2.getValue());');
 end;
 
 procedure TMainForm.UniFormCreate(Sender: TObject);
