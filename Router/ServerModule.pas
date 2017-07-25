@@ -51,6 +51,11 @@ begin
     Handled := True;
     AResponseInfo.Redirect('/');
   end;
+  if SameText(ARequestInfo.URI, '/baidu') then
+  begin
+    Handled := True;
+    AResponseInfo.Redirect('http://www.baidu.com');
+  end;
 end;
 
 initialization
