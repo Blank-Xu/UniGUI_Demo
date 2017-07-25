@@ -55,6 +55,7 @@ object UniServerModule: TUniServerModule
   SSL.SSLOptions.VerifyDepth = 0
   ConnectionFailureRecovery.ErrorMessage = 'Connection Error'
   ConnectionFailureRecovery.RetryMessage = 'Retrying...'
+  OnHTTPCommand = UniGUIServerModuleHTTPCommand
   Height = 150
   Width = 215
 end
